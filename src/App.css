@@ -1,0 +1,103 @@
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d4d7dc;
+}
+
+.top-nav nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #1f2937;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+}
+
+.top-nav a.active {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+.page {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #d4d7dc;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0f766e;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #d4d7dc;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  color: #4b5563;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.project-card {
+  padding: 1rem;
+  border: 1px solid #d4d7dc;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0f766e;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

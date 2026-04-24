@@ -1,0 +1,145 @@
+Assignment 4: Build Your Portfolio Website
+
+Objective:
+
+Create a personal portfolio using React Router.
+
+Requirements:
+
+1. Create Pages:
+
+1. Home Page Include:
+
+o About Me
+
+o Research Interests
+
+o Personal Details
+
+o Profile Picture
+
+2. Projects Page
+
+o Display your projects
+
+o Link each project to your GitHub repository
+
+
+2. Navigation:
+
+· Use NavLink for routing between pages
+
+
+3. Personal Details:
+
+Include the following:
+
+· Name
+
+· Phone Number
+
+· Email ID (Personal & College Email)
+
+· Skills
+
+· At least 2 projects
+
+
+4. Styling:
+
+· Apply CSS to make your portfolio visually appealing
+
+
+5. Deployment:
+
+· Deploy your project using GitHub Pages
+
+
+GitHub Deployment Steps:
+
+Create Repo
+
+· Open GitHub
+
+· Click New Repository
+
+· Name: portfolio
+
+· Click Create
+
+
+Step 1: Open Terminal in Project Folder Push Project to GitHub
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git branch -M main
+
+git remote add origin https://github.com/your-username/portfolio.git
+
+git push -u origin main
+
+
+( after this gets executed -check whether your code is in the github)
+
+
+Step 2: Install gh-pages
+
+npm install gh-pages --save-dev
+
+
+Step 3: Update package.json
+
+Add:
+
+"homepage": "https://your-username.github.io/portfolio"
+
+Add scripts:
+
+"predeploy": "npm run build",
+
+"deploy": "gh-pages -d build"
+
+
+Step 4: Use HashRouter
+
+Replace:
+
+BrowserRouter
+
+with:
+
+HashRouter
+
+
+Step 5: Deploy
+
+npm run deploy
+
+
+Step 6: Enable GitHub Pages
+
+· Go to Repository → Settings → Pages
+
+· Select branch: gh-pages
+
+Submission:
+
+· GitHub Repository Link
+
+· Live Website Link (Example: https://yourname.github.io/portfolio)
+
+Deadline:
+
+22/04/2026 (Wednesday) before 11:50 PM
+
+Important Notes:
+
+· Your repository must be public
+
+· Ensure all links are working before submission
+
+· This portfolio will be useful for your future internships and placem
