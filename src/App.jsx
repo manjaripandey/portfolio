@@ -3,15 +3,15 @@ import './App.css'
 
 const projects = [
   {
-    title: 'C-Shell',
-    description:
-      'Custom Linux shell in C with piping, redirection, background execution, and job control.',
-    link: 'https://github.com/manjaripandey',
-  },
-  {
     title: 'Buy-Sell @ MU',
     description:
       'Campus buy/sell platform using React, Node, Express, and MongoDB with secure authentication.',
+    link: 'https://github.com/manjaripandey/BUY_SELL',
+  },
+  {
+    title: 'C-Shell',
+    description:
+      'Custom Linux shell in C with piping, redirection, background execution, and job control.',
     link: 'https://github.com/manjaripandey',
   },
   {
@@ -27,7 +27,7 @@ function HomePage() {
     <main className="page">
       <section className="hero-card">
         <img
-          src="/profile.jpg"
+          src="/image.png"
           alt="Manjari Pandey"
           className="profile-photo"
           onError={(event) => {
