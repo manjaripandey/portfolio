@@ -1,6 +1,9 @@
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 
+const profileImage = `${import.meta.env.BASE_URL}image.png`
+const profileFallback = `${import.meta.env.BASE_URL}profile.svg`
+
 const projects = [
   {
     title: 'Buy-Sell @ MU',
@@ -27,11 +30,11 @@ function HomePage() {
     <main className="page">
       <section className="hero-card">
         <img
-          src="/image.png"
+          src={profileImage}
           alt="Manjari Pandey"
           className="profile-photo"
           onError={(event) => {
-            event.currentTarget.src = '/profile.svg'
+            event.currentTarget.src = profileFallback
           }}
         />
         <div>
